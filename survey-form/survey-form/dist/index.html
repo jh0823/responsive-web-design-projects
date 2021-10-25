@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap" rel="stylesheet">
+
+<main id="main">
+  <div id="container">
+    <header class= "header">
+    <h1 id="title">
+      Gaming Survey Form
+    </h1>
+    <p id = "description">
+      A short little survey to help collect data on the average gamer
+    </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input type="text" name="name" id="name" class="form control" placeholder= "Enter your name" required/>
+        <br>
+         <label id="email-label" for="email">Email</label>
+        <input type="email" name="email" id="email" class="form control" placeholder= "Enter your email" required/>
+        <br>
+        <label id="number-label" for="number">Age<span class="clue"> (optional)</span></label>
+        <input type="number" name="age" id="number" min="10" max="99" class="form control" placeholder= "Age" required/>
+        </div>
+         <div class="form-group">
+           <p>What's platform do you mainly play on? </p>
+           <select name="platform" id="dropdown">
+             <option displayed selected value> Select current platform</option>
+             <option value="PC">PC</option>
+             <option value="Xbox">XBox</option>
+             <option value="Playstation">Playstation</option>
+             <option value="Switch">Switch</option>
+             <option value="Mobile">Mobile</option>
+           </select>
+        </div>
+        <div class="form-group">
+          <p>
+            How often would you say you played video games daily?            </p>
+          <label>
+            <input name="hours-played"
+                   value="0-1 Hours"
+                   type="radio"
+                   class="input-radio"
+                   checked/>0-1 Hours</label>
+           <label>
+            <input name="hours-played"
+                   value="2-3 Hours"
+                   type="radio"
+                   class="input-radio"
+                   />2-3 Hours</label>
+           <label>
+            <input name="hours-played"
+                   value="4-5 Hours"
+                   type="radio"
+                   class="input-radio"
+                   />4-5 Hours</label>
+           <label>
+            <input name="hours-played"
+                   value="6+ Hours"
+                   type="radio"
+                   class="input-radio"
+                   />6+ Hours</label>
+        </div>
+        <div class="form-group">
+          <p> What genre(s) of games do you play? <span class="clue">(Check all that apply)</span></p>
+          <label><input
+                        name="gamesplayed"
+                        value="MMORPGS"
+                        type="checkbox"
+                        class="input-checkbox"/>
+            MMORPGS</label>
+            <label><input
+                        name="gamesplayed"
+                        value="FPS"
+                        type="checkbox"
+                        class="input-checkbox"/>
+           FPS</label>
+            <label><input
+                        name="gamesplayed"
+                        value="Strategy"
+                        type="checkbox"
+                        class="input-checkbox"/>
+            Strategy</label>
+            <label><input
+                        name="gamesplayed"
+                        value="Sports"
+                        type="checkbox"
+                        class="input-checkbox"/>
+           Sports</label>
+            <label><input
+                        name="gamesplayed"
+                        value="Rhythm"
+                        type="checkbox"
+                        class="input-checkbox"/>
+           Rhythm</label>
+            <label><input
+                        name="gamesplayed"
+                        value="Simulation"
+                        type="checkbox"
+                        class="input-checkbox"/>
+            Simulation</label>
+            <label><input
+                        name="gamesplayed"
+                        value="Platformers"
+                        type="checkbox"
+                        class="input-checkbox"/>
+            Platformers</label>
+           <label><input
+                        name="gamesplayed"
+                        value="Fighting"
+                        type="checkbox"
+                        class="input-checkbox"/>
+            Fighting</label>
+           <label><input
+                        name="gamesplayed"
+                        value="Survival"
+                        type="checkbox"
+                        class="input-checkbox"/>
+            Survival</label>
+          
+        </div>
+  <div class="form-group">
+    <p> What's your all-time favorite game?</p>
+    <textarea
+              id="favoritegame"
+              class="input-textarea"
+              name="favoritegame"
+              placeholder=" Enter your favorite game here..."></textarea>
+  </div>
+       <div class = "form-group">      
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+      </div>
+      </div>
+    </form>
+ 
+
+</main>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
