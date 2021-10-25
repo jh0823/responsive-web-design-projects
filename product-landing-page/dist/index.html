@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Product Landing Page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- 
+
+Hello Camper!
+
+Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+<main>
+  <header id="header">
+    <img id="header-img" class="navbar" src="https://cdn.discordapp.com/attachments/806257975965515798/885332866131714048/unknown_1.png">
+    <h3> Kochi Dye Shop </h3>
+    <nav id="nav-bar" class="navbar">
+      <ul class="navlinks">
+        <li><a class="nav-link" href="#features"> Features</a></li>
+        <li><a class="nav-link" href=#possiblecolors> Possible Colors</a></li>
+        <li><a class="nav-link" href="#ingredients"> Ingredients</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <body>
+    <div class="hero">
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <label><strong>Where we live to dye</strong></label>
+        <input type="email" id="email" name="email" placeholder="Enter your email here" />
+        <input id="submit" type="submit" value="Get Started" class="btn" />
+      </form>
+    </div>
+    <div id="features">
+      <p>Kochi Dye Shop gives you the ability to change the color of your armor! For just 20 rupees and a few materials, you can change your armor to any of the possible colors. You can also restore your armor to the original color.</p>
+        <iframe id="video" width=" 420" height="315" src="https://www.youtube.com/embed/AFNUvdno_1g?showinfo=0"></iframe>
+    </div>
+    <div id="possiblecolors">
+      <h3> Possible Colors </h3>
+      <table id="table-colors">
+        <tr>
+          <th>Blue</th>
+          <th>Red</th>
+          <th>Yellow</th>
+          <th>White</th>
+          <th>Black</th>
+        </tr>
+        <tr>
+          <td><img id="colordye" alt="blue dye color" src="https://cdn.discordapp.com/attachments/806257975965515798/885362876968214538/unknown.png"></td>
+          <td><img id="colordye" alt="red dye color" src="https://cdn.discordapp.com/attachments/806257975965515798/885363084087132160/unknown.png"></td>
+          <td><img id="colordye" alt="yellow dye color" src="https://cdn.discordapp.com/attachments/806257975965515798/885364411353661521/unknown.png"></td>
+          <td><img id="colordye" alt="white dye color" src="https://cdn.discordapp.com/attachments/806257975965515798/885364447869284392/unknown.png"></td>
+          <td><img id="colordye" alt="black dye color" src="https://cdn.discordapp.com/attachments/806257975965515798/885364480224137236/unknown.png"></td>
+        </tr>
+        <tr>
+          <th>Purple</th>
+          <th>Green</th>
+          <th>Light Blue</th>
+          <th>Navy</th>
+          <th>Orange</th>
+        </tr>
+        <tr>
+          <td><img id="colordye" alt="purple dye color" src="https://cdn.discordapp.com/attachments/806257975965515798/885364519013056532/unknown.png"></td>
+          <td><img id="colordye" alt="green dye color" src="https://cdn.discordapp.com/attachments/806257975965515798/885364536142622760/unknown.png"></td>
+          <td><img id="colordye" alt="light blue dye color" src="https://cdn.discordapp.com/attachments/806257975965515798/885364551053369344/unknown.png"></td>
+          <td><img id="colordye" alt="navy dye color" src="https://cdn.discordapp.com/attachments/806257975965515798/885364566140272640/unknown.png"></td>
+          <td><img id="colordye" alt="orange dye color" src="https://cdn.discordapp.com/attachments/806257975965515798/885364583408230492/unknown.png"></td>
+        </tr>
+        <tr>
+          <th>Peach</th>
+          <th>Crimson</th>
+          <th>Light Yellow</th>
+          <th>Brown</th>
+          <th>Gray</th>
+        </tr>
+        <tr>
+          <td><img id="colordye" alt="peach dye color" src="https://cdn.discordapp.com/attachments/806257975965515798/885364616748744754/unknown.png"></td>
+          <td><img id="colordye" alt="crimson dye color" src="https://cdn.discordapp.com/attachments/806257975965515798/885364642124296222/unknown.png"></td>
+          <td><img id="colordye" alt="light yellow dye color" src="https://cdn.discordapp.com/attachments/806257975965515798/885364655311187998/unknown.png"></td>
+          <td><img id="colordye" alt="brown dye color" src="https://cdn.discordapp.com/attachments/806257975965515798/885364670733627392/unknown.png"></td>
+          <td><img id="colordye" alt="gray dye color" src="https://cdn.discordapp.com/attachments/806257975965515798/885364683920506890/unknown.png"></td>
+        </tr>
+      </table>
+    </div>
+    <div id="ingredients">
+      <h3>Ingredients</h3>
+      <ul id="ingredients-list">
+        <li><strong>Blue Dye: </strong>Chillshroom, Blue Nightshade, Winterwing Butterfly, Cold Darner, Hearty Lizard, Sapphire, Icy Lizalfos Tail, Ice Keese Wing</li>
+        <li><strong>Red Dye:</strong> Apple, Spicy Pepper, Hylian Shroom, Sunshroom, Summerwing Butterfly, Warm Darner, Ruby, Red Lizalfos Tail, Red Chuchu Jelly, Fire Keese Wing</li>
+        <li><strong>Yellow Dye: </strong>Mighty Bananas, Zapshroom, Bird Egg, Thunderwing Butterfly, Electric Darner, Energetic Rhino Bettle, Topaz, Yellow Lizalfos Tail, Yellow Chuchu Jelly, Electric Keese Wing, Octorok Eyeball, Hinox Guts</li>
+        <li><strong>White Dye:</strong> Silent Princess, Hylian Rice, Star Fragment, Fresh Milk, Diamond, Lynel Horn, White Chuchu Jelly</li>
+        <li><strong>Black Dye:</strong> Big Hearty Truffle, Hearty Truffle, Flint, Lynel Hoof</li>
+        <li><strong>Purple Dye:</strong> Rushroom, Swift Violet, Armoranth, Monster Extract, Sunset Firefly, Bokoblin Guts, Octo Balloon</li>
+        <li><strong>Green Dye:</strong> Hydromelon, Fleet-Lotus Seeds, Stamella Shroom, Hyrule Herb, Cane Sugar, Restless Cricket, Rugged Rhino Beetle, Hot-Footed Frog, Lizalfos Tail, Molduga Guts</li>
+        <li><strong>Light Blue Dye:</strong> Silent Shroom, Cool Safflina, Naydra's Scale, Naydra's Claw, Shard of Naydra's Fang, Shard of Naydra's Horn, Moblin Guts, Chuchu Jelly, Octorok Tentacle</li>
+        <li><strong>Navy Dye:</strong> Bladed Rhino Beetle, Luminous Stone</li>
+        <li><strong>Orange Dye:</strong> Voltfruit, Endura Shroom, Swift Carrot, Fortified Pumpkin, Warm Safflina, Mighty Thistle, Courser Bee Honey, Amber, Keese Eyeball</li>
+        <li><strong>Peach Dye: </strong>Wildberry, Big Hearty Radish, Hearty Radish, Rock Salt</li>
+        <li><strong>Crimson Dye:</strong> Razorshroom, Chickaloo Tree Nut, Goron Spice, Dinraal's Scale, Dinraal's Claw, Shard of Dinraal's Fang, Shard of Dinraal's Horn, Tireless Frog, Lynel Guts</li>
+        <li><strong>Light Yellow Dye: </strong>Hearty Durian, Palm Fruit, Endura Carrot, Electric Safflina, Tabantha Wheat, Goat Butter, Farosh's Scale, Farosh's Claw, Shard of Farosh's Fang, Shard of Farosh's Horn, Opal, Bokoblin Fang</li>
+        <li><strong>Brown Dye: </strong>Ironshroom, Acorn, Hightail Lizard, Molduga Fin, Hinox Toenail, Hinox Tooth</li>
+        <li><strong>Gray Dye:</strong> Smotherwing Butterfly, Fireproof Lizard, Bokoblin Horn, Moblin Horn, Moblin Fang, Lizalfos Horn, Lizalfos Talon, Keese Wing, Ancient Scew, Ancient Spring, Ancient Gear, Ancient Shaft, Ancient Core, Giant Ancient Core</li>
+      </ul>
+    </div>
+
+  </body>
+</main>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

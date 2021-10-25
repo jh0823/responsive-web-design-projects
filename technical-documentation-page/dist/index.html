@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Technical Documentation Page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main id="main-doc">
+  <header>
+    <nav id="navbar">
+      <ul class="navbar">
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#html_basics">HTML Basics</a></li>
+        <li><a href="#elements">Elements</a></li>
+        <li><a href="#attributes">Attributes</a></li>
+        <li><a href="#headings_and_paragraphs">Headings and Paragraphs</a></li>
+        <li><a href="#styling_and_formatting">Styling and Formatting</a></li>
+        <li><a href="#CSS">CSS</a></li>
+        <li><a href="#links">Links</a></li>
+        <li><a href="#images">Images</a></li>
+        <li><a href="#tables_and_lists">Tables and Lists</a></li>
+        <li><a href="#block_and_inline">Block and Inline</a></li>
+        <li><a href="#reference">Reference</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="main-section" id="Introduction">
+    <header>
+      <h2>Introduction</h2>
+      <p>HTML is the standard markup language for creating Web pages. </p>
+      <p><strong>What is HTML?</strong></p>
+      <ul>
+        <li>HTML stands for Hyper Text Markup Lanuage</li>
+        <li>HTML is the standard markup language for creating Web pages</li>
+        <li>HTML describes the structure of a Web page</li>
+        <li>HTML consists of a series of elements</li>
+        <li>HTML elements tell the browser how to display the content</li>
+        <li>HTML elements label pieces of conent such as "this is a heading", "this is a paragraph", "this is a link", etc</li>
+      </ul>
+  </section>
+
+  <section class="main-section" id="html_basics">
+    <header>
+      <h2>HTML Basics</h2>
+    </header>
+    <p> All HTML documents must start with a document type declaration: <code>&lt!DOCTYPE html></code>. The HTML document itself begins with <code>&lthtml></code> and ends with <code>&lt/html></code>. The visible part of the HTML document is between <code>
+        &ltbody>
+      </code> and <code>
+        &lt/body>
+      </code>.</p>
+    <p>This is an example: </p>
+    <div class="html_example">
+      <pre><code> 
+&lt!DOCTYPE html>
+    &lthtml>
+      &ltbody>
+        &lth1>Hello World&lt/h1>
+         &ltp>Hello world.&lt/p>
+      &lt/body>
+   &lt/html> 
+    </code></pre>
+    </div>
+    <p> This will print out the following: </p>
+    <div class="hello_world_example">
+      <h1>Hello World</h1>
+      <p>Hello world.</p>
+    </div>
+  </section>
+
+  <section class="main-section" id="elements">
+    <header>
+      <h2>Elements</h2>
+    </header>
+    <p>An HTML element is defined by a start tag, some content, and an end tag: <code> &lttagname>Content goes here...&lt/tagname></code></p>
+    <p>Examples of HTML elements:
+    <div class="html_example">
+      <pre>
+      <code>&lth1>My First Heading&lt/h1>
+      &ltp>My first paragraph.&lt/p></code></pre>
+    </div>
+    </p>
+    <p>Some elements will have no content (like the <code>&ltbr></code> element). These elements are called empty elements. Empty elements do not have an end tag.</p>
+
+    <p>HTML elements can be nested (this means the elements can contain other elements). HTML is also not case sensitive: <code>&ltP></code> is the same as <code>&ltp></code>.</p>
+  </section>
+  <section class="main-section" id="attributes">
+    <header>
+      <h2>Attributes</h2>
+    </header>
+    <p>Attributes provide additional information about HTML elements.</p>
+    <ul>
+      <li>All HTML elements can have <strong>attributes</strong></li>
+      <li>Attributes provide <strong>additional information</strong> about elements</li>
+      <li>Attributes are always specified in <strong>the start tag</strong></li>
+      <li>Attributes usually come in name/value pairs like: <strong>name="value"</strong></li>
+    </ul>
+    <p>Some commonly used attributes and examples are: </p>
+    <p><strong>href: </strong>This attribute specifies the URL of the page the link goes to: <code>&lta href="www.google.com">Google's Homepage&lt/a></code></p>
+    <p><strong>src: </strong>This specifies the path to the image to be displayed:<code>&ltimg src="img.jpg"></code></p>
+    <p><strong>width: </strong>This is commonly used with the <code>&ltimg></code> tag and specifies the width of the image (in pixels): <code>&ltimg src="img.jpg" width="500"></code></p>
+    <p><strong>height: </strong>This is also commonly used with the <code>&ltimg></code> tag as well as the <code>width</code> attribute. It specifies the height of the image (in pixels): <code>&ltimg src="img.jpg" width="500" height="500"></code></p>
+    <p><strong>alt: </strong>This is required for the <code>&ltimg></code> tag and it specifies an alternative text for an image for when the image cannot be displayed: <code>&ltimg src="img.jpr" alt="random image"></code></p>
+  </section>
+
+  <section class="main-section" id="headings_and_paragraphs">
+    <header>
+      <h2>Headings and Paragraphs</h2>
+    </header>
+    <h3>Headings</h3>
+    <p>HTML headings are titles or subtitles that you want to display on a webpage. Here are some examples of the different heading tags you can use:</p>
+    <div class="headers_example">
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
+    </div>
+
+    <p>HTML headings are defined with the <code>&lth1></code> to <code>&lth6></code> tags, with <code>&lth1></code> being the most important and <code>&lth6></code> being the least important.</p>
+
+    <h3>Paragraphs</h3>
+    <p>A paragraph always starts on a new line, and is usually a block of text. The <code>&ltp></code> element defines a paragraph. The browser will automatically remove any extra spaces and lines when the page is displayed. For example: </p>
+    <pre><code>
+        &ltp>
+          This paragraph
+          contains a lot of lines
+          in the source code,
+          but the browser ignores it.
+        &lt/p>
+        
+        
+        &ltp>
+           This pargraph
+           contains       a lot of     spaces
+           in the source      code,
+           but the               browser
+           ignores it.&lt/p></code></pre>
+    <p>This will display as: </p>
+    <p>This paragraph
+      contains a lot of lines
+      in the source code,
+      but the browser ignores it.</p>
+    <p>This pargraph
+      contains a lot of spaces
+      in the source code,
+      but the browser
+      ignores it.</p>
+
+    <p>A solution around this problem is to use the <code>&ltpre></code> tag. This tag defines preformatted text and preserves both spaces and line breaks. Here are the above examples but replacing the <code>&ltp></code> tags with <code>&ltpre></code> tags.</p>
+    <pre>This paragraph
+      contains a lot of lines
+      in the source code,
+      but the browser does not ignore it.</pre>
+    <pre>This pargraph
+           contains       a lot of     spaces
+           in the source      code,
+           but the               browser does not
+      ignore it.</pre>
+
+  </section>
+
+  <section class="main-section" id="styling_and_formatting">
+    <header>
+      <h2>Styling and Formatting</h2>
+    </header>
+    <p>The HTML <code>style</code> attribute is used to add styles to an element, such as color, font, size, and more.</p>
+    <p>Here are some examples: </p>
+    <pre><code>
+        &lth2 color="red">I am red.&lt/h2>
+        &ltp color="blue">I am blue.&lt/p>
+        &ltp font-size="35px">I am big.&lt/p></code> </pre>
+    <p>will display as:</p>
+    <div class="styles_example">
+      <h2 style="color:red;">I am red.</h2>
+      <p style="color:blue;">I am blue.</p>
+      <p style="font-size:35px;">I am big.</p>
+    </div>
+    <p>The <code>style</code> attribute has the following syntax:<code>&lttagname style ="property:value;"></code> where the <strong>property</strong> is a CSS property and the <strong>value</strong> is a CSS value.</p>
+    <h3>Background Color</h3>
+    <p>The CSS <code>background-color</code> property defines the background color for an HTML element. Here's are a couple of examples: </p>
+    <h3 style="background-color:powderblue;">The color is powder blue.</h3>
+    <p style="background-color:tomato;">The color is tomato.</p>
+    <h3>Text Color</h3>
+    <p>The color of the text can also be changed using the <code>color</code> property.</p>
+    <p style="color:blue;">The text color is blue.</p>
+    <h3>Fonts</h3>
+    <p>The CSS <code>font-family</code> property defines the font to be used for an HTML element: </p>
+    <p style="font-family:veranda;">The font is Veranda.</p>
+    <p style="font-family:courier;">The font is Courier.</p>
+    <h3>Text Size</h3>
+    <p>The CSS <code>font-size</code> property defines the text size for an HTML element:</p>
+    <p style="font-size:300%">300% font size</p>
+    <p style="font-size: 150%">150% font size</p>
+
+    <h3>Text Alignment</h3>
+    <p>The CSS <code>text-align</code> property defines the horizontal text alignment for an HTML element: </p>
+    <p style="text-align: center">This text is center aligned.</p>
+    <p style="text-align: right">This text is right aligned.</p>
+
+    <h2>Formatting</h2>
+    <p>Formatting elements were designed to display special types of text: </p>
+    <ul class="formatting_list">
+      <li><code>&ltb></code> - <b>Bold</b> text</li>
+      <li><code>&ltstrong></code> - <strong>Strong</strong> text</li>
+      <li><code>&lti></code> - <i>Italic</i> text</li>
+      <li><code>&ltem></code> - <em>Emphasized</em> text</li>
+      <li><code>&ltmark></code> - <mark>Marked</mark> text</li>
+      <li><code>&ltsmall></code> - <small>Smaller</small> text</li>
+      <li><code>&ltdel></code> - <del>Deleted</del> text</li>
+      <li><code>&ltins></code> - <ins>Inserted</ins> text</li>
+      <li><code>&ltsub></code> - <sub>Subscript</sub> text</li>
+      <li><code>&ltsup></code> - <sup>Superscript</sup> text</li>
+    </ul>
+
+  </section>
+
+  <section class="main-section" id="CSS">
+    <header>
+      <h2>CSS</h2>
+    </header>
+    <p>CSS can be added to HTML documents in 3 ways:
+    <ul>
+      <li><strong>Inline - </strong> by using the <code>style</code> attribute inside HTML elements</li>
+      <li><strong>Internal - </strong> by using a <code>&ltstyle></code> element in the <code>&lthead></code> section</li>
+      <li><strong>External -</strong> by using a <code>&ltlink></code> element to link to an external CSS file</li>
+    </ul>
+    </p>
+    <h3>Inline CSS</h3>
+    <p>An inline CSS is used to apply a unique style to a single HTML element. Here is an example that will set the text color of the <code>&ltp></code> element to red:</p>
+    <pre><code>&ltp style="color:red;">A red paragraph.&lt/p></code></pre>
+    <h3>Internal CSS</h3>
+    <p>An internal CSS is used to define a style for a single HTML page. It is defined in the <code>&lthead></code> section of an HTML page, withing a <code>&ltstyle></code> element. The following example sets the color of ALL the <code>&lth1></code> elements to blue and the text color of all <code>&ltp></code> elements to red: </p>
+    <div class="internal_css_example">
+      <pre><code>
+        &lt!DOCTYPE html>
+          &lthtml>
+             &lthead>
+                &ltstyle>
+                    h1 {color: blue;}
+                    p {color: red;}
+                &lt/style>
+             &lt/head>
+           &ltbody>
+              &lth1>This is a heading.&lt/h1>
+              &ltp>This is a paragraph.&lt/p>
+           &lt/body>
+         &lt/html>
+             </code>
+             </pre>
+    </div>
+  <h3>External CSS</h3>
+  <p>An external style sheet is used to define the style for many HTML pages. To use an external style sheet, add a link to it in the <code>&lthead></code> section of each HTML page: </p>
+  <div class="external_css_example">
+    <pre><code>
+         &lt!DOCTYPE html>
+            &lthtml>
+               &lthead>
+                  &ltlink rel="stylesheet" href="styles.css">
+               &lt/head>
+               &ltbody>
+               &ltp>This is a paragraph.&lt/p>
+               &lt/body>
+            &lt/html>
+            </code></pre>
+  </div>
+  <p>The external style sheet cna be written in any text editor. The file must not contain any HTML code, and must be saved with a .css extension. Here is an example: </p>
+  <div class="external_css_example">
+    <pre><code>
+        body
+        {
+          background-color: powderblue;
+        }
+        p
+        {
+          color: red;
+        }
+        </code></pre>
+  </div>
+  <h3>Common CSS Properties</h3>
+  <p>
+    Some commonly used CSS properties are:
+    <ul class="css_properties_list">
+      <li><code>color</code> - defines the text color to be used</li>
+      <li><code>font-family</code> - defines the font to be used</li>
+      <li><code>font-size</code> - defines the text size to be used</li>
+      <li><code>border</code> - defines a border around an HTML element</li>
+      <li><code>padding</code> - defines a padding (space) between the text and the border</li>
+      <li><code>margin</code> - defines a margin (space) outside the border</li>
+  </ul>
+  </p>
+
+  </section>
+  <section class="main-section" id="links">
+    <header>
+      <h2>Links</h2>
+    </header>
+    <p>HTML linkes are hyperlinks. You can click on a link and jump to another document. The HTML <code>&lta></code> tag defines a hyperlink. It has the following syntax:<p>
+    <pre><code>&lta href="url"><i>link text</i>&lt/a></code></pre><p>The most important attribute of the <code>&lta></code> element is the <code>href</code> attribute, which indicates teh link's destination. The <i>link text</i> is the text that is visible to the reader.<p>
+    <h3>Target Attribute</h3>
+    <p>By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link. The <code>target</code> attribute specifies where to open the linked document. It can have one of the following values: 
+      <ul>
+        <li><code>_self</code> - Default. Opens the document in the same window/tab as it was clicked</li>
+        <li><code>_blank</code> - Opens the document in a new window or tab</li>
+        <li><code>_parent</code> - Opens the document in the parent frame</li>
+        <li><code>_top</code> - Opens the document in the full body of the window</li>
+    </ul>
+    </p>
+<h3>Absolute URL vs Relative URL</h3>
+<p>
+  </section>
+  <section class="main-section" id="images">
+    <header>
+      <h2>Images</h2>
+    </header>
+  </section>
+
+  <section class="main-section" id="tables_and_lists">
+    <header>
+      <h2>Tables and Lists</h2>
+    </header>
+  </section>
+  <section class="main-section" id="block_and_inline">
+    <header>
+      <h2>Block and Inline</h2>
+    </header>
+  </section>
+  <section class="main-section" id="reference">
+    <header>
+      <h2>Reference</h2>
+    </header>
+  </section>
+
+</main>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

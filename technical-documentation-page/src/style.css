@@ -1,0 +1,24 @@
+.navbar li
+{
+  list-style-type: none;
+}
+.html_example
+{
+  background-color: silver;
+  width: 90%;
+}
+
+.hello_world_example
+{
+  border: solid 1px;
+  width: 90%;
+  padding: 0 0 0 2em;
+  
+}
+
+.headers_example
+{
+  border: solid 1px;
+  width: 90%;
+  
+}
